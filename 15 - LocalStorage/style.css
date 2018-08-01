@@ -67,11 +67,11 @@
       content: '🌮';
     }
 
-    .add-items {
+    .add-items, .delete-all, .check-all, .uncheck-all {
       margin-top: 20px;
     }
 
-    .add-items input {
+    .add-items input, .delete-all input, .check-all input, .uncheck-all input {
       padding:10px;
       outline:0;
       border:1px solid rgba(0,0,0,0.1);
