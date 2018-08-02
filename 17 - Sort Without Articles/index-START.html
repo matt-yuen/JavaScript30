@@ -44,9 +44,20 @@
   <ul id="bands"></ul>
 
 <script>
-const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+  const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
 
+  const list = document.querySelector("#bands");
+  const search = /^(the |an |a |)/i; // The ^ checks if it begins with
 
+  const ordered = bands.sort((a, b) => a.replace(search, "").trim() > b.replace(search, "").trim() ? 1 : -1);
+
+  console.table(ordered);
+
+  const html = ordered.map(band => `<li>${band}</li>`).join("");
+  // Need the .join("") because if you do the next line without it, it'll automatically call the toString function which
+  // joins anything like an array with commas
+
+  list.innerHTML = html;
 </script>
 
 </body>
