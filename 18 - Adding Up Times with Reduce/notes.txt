@@ -1,0 +1,12 @@
+document.querySelector(...) - returns a node list, not an array
+
+Array.from(...) - converts to array
+
+[].slice.call(document.querySelector(...)) - also converts the node list into an array, not included in video
+
+[*var1*, *var2*, *var3*...] = *array* - this notation assigns each variable with the value of the corresponding array element
+
+*array*.reduce(...) - reduces the array into one value
+
+----- Notes -----
+-Black text in console means string, numbers (ints, etc) are blue
