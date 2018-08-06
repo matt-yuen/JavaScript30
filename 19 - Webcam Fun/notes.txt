@@ -1,0 +1,5 @@
+navigator.mediaDevices.getUserMedia - to get camera feed
+
+URL.createObjectURL(media) - deprecated, use srcObject
+
+setInterval(function, msec) - calls the function every time interval
