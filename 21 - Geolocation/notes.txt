@@ -1,0 +1,5 @@
+navigator.geolocation.watchPosition
+
+Note:
+
+	class.style.attribute = ... - to change css
