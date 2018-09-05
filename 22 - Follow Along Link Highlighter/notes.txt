@@ -1,0 +1,9 @@
+element.getBoundingClientRect()
+
+Note:
+
+	document.createElement('element_name')
+
+	element_name.classList.add('class_name')
+
+	document.body.append(element_name) - adds to end of html body
